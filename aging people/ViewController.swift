@@ -15,17 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.dataSource = self
-//        tableView.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
-
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-
-
 }
 
 extension ViewController: UITableViewDataSource {
@@ -41,10 +32,5 @@ extension ViewController: UITableViewDataSource {
         cell.detailTextLabel?.text = "\(randomN) years old"
         return cell
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("Section: \(indexPath.section) and Row: \(indexPath.row)")
-//        arr.remove(at: indexPath.row)
-//        tableView.reloadData()
-//    }
 
 }
